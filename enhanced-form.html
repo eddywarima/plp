@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    header, footer {
+      background-color: #f0f0f0;
+      padding: 15px;
+      text-align: center;
+    }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: #fafafa;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    img, video {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Form Page</h1>
+    <p>Includes form, media, table, and lists</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About This Page</h2>
+      <p>This page demonstrates HTML5 features including semantic layout, media, lists, tables, and a comprehensive form.</p>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>HTML5 Form Features</li>
+        <li>Semantic Tags</li>
+        <li>Built-in Validation</li>
+        <li>Accessibility</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Open the form</li>
+        <li>Fill in your information</li>
+        <li>Submit the form</li>
+      </ol>
+
+      <h3>Media</h3>
+      <img src="https://via.placeholder.com/400x200" alt="Sample Image"/>
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Sample Table</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Supported</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Validation</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Media Embeds</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Accessibility</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>User Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Choose a password" required minlength="6" />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="120" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select Country--</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+        <label for="resume">Upload Resume (PDF):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" />
+
+        <label>
+          <input type="checkbox" name="terms" required />
+          I agree to the terms and conditions
+        </label>
+
+        <label for="readonly-field">Referral Code (read-only):</label>
+        <input type="text" id="readonly-field" name="referral" value="ABC123" readonly />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Project</p>
+  </footer>
+
+</body>
+</html>
